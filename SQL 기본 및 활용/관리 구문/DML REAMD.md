@@ -20,3 +20,9 @@
       -- 데이터 조회
       SELECT [ 컬럼명 ] FROM [ 테이블명 ] WHERE [ 조건 ];
       ~~~
+- INSERT에서 컬럼명 명시 하지 않으면 모든 컬럼값 적어줘야 함
+  ~~~
+  EX)
+  INSERT INTO 테이블명 (컬럼1, 컬럼2, 컬럼3) VALUES (값1, 값2, 값3); // Success
+  INSERT INTO 테이블명 VALUES (값1, 값2, 값3); // 여기에서 컬럼이 더 있는 경우 에러 발생
+  ~~~
